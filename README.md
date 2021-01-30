@@ -11,8 +11,8 @@ Opisy wszystkich zdjęć znajdują się w ich tytułach (należy najechać mysz�
 
 
 ![alt text](public/1.png "Uruchomienie 3 serwerów - 2 serwery po lewej stronie są zintegrowane z redis, a serwer po prawej nie. Do każdego z serwerów połączyłem klienta.")
-![alt text](sprawko/2.png "Widoki klientów - po lewej, połączony do serwera na porcie 3000, na środku 3001, a po prawej 3002 - bez redis")
-![alt text](sprawko/3.png "Wysyłając wiadomości z okna po lewej lub na środku - wiadomości wyświetlane są również u klienta połączonego z innym serwerem - na innym porcie.")
-![alt text](sprawko/6.png "Wysyłając wiadomość przez klienta połączonego na porcie 3002 (bez redis) - wysyłane wiadomości widoczne są przez wszystkich klientów połączonych z tym samym serwerem i tylko przez nich.")
-![alt text](sprawko/7.png "Dwaj klienci połączeni do tego samego serwera - nie korzystającego z redis.")
+![alt text](public/2.png "Widoki klientów - po lewej, połączony do serwera na porcie 3000, na środku 3001, a po prawej 3002 - bez redis")
+![alt text](public/3.png "Wysyłając wiadomości z okna po lewej lub na środku - wiadomości wyświetlane są również u klienta połączonego z innym serwerem - na innym porcie.")
+![alt text](public/6.png "Wysyłając wiadomość przez klienta połączonego na porcie 3002 (bez redis) - wysyłane wiadomości widoczne są przez wszystkich klientów połączonych z tym samym serwerem i tylko przez nich.")
+![alt text](public/7.png "Dwaj klienci połączeni do tego samego serwera - nie korzystającego z redis.")
 
