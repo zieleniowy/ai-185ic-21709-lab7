@@ -1,0 +1,18 @@
+{
+  "name": "ai-185ic-21709-lab7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zieleniowy/ai-185ic-21709-lab7.git",
+  "scripts": {
+    "start": "USE_REDIS=true node index.js",
+    "start-no-redis": "USE_REDIS=false node index.js"
+  },
+  "author": "zieleniowy <m.rynkowski@zhr.pl>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "portscanner": "^2.2.0",
+    "socket.io": "^3.1.0",
+    "socket.io-redis": "^6.0.1"
+  }
+}

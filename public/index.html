@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <form id="message-form">
+        <input placeholder="treść wiadomości" type="text" />
+    </form>
+    <div id="messages">
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        const msgs = document.getElementById('messages');
+        const addMessage = (ctr, message) =>{
+            ctr.innerHTML=`<div>${message}</div>`+ctr.innerHTML;
+        }
+        socket.on('message', addMessage.bind(null, msgs));
+        document.getElementById('message-form').addEventListener('submit', e=>{
+            e.preventDefault();
+            addMessage(msgs, e.target[0].value);
+            socket.emit('message', e.target[0].value);
+            e.target[0].value = "";
+        })
+    </script>
+
+</body>
+</html>
